@@ -1,1 +1,40 @@
 # InputOutputTestProject
+## File
+1. 新增writeFile用法
+   1. 參考FileMain
+   2. 實現檔案寫入及try縮寫方法
+2. 新增readFile用法
+   1. 參考FileMain
+   2. 實現檔案讀取及try縮寫方法
+3. 新增bufferedReaderFile用法
+   1. 參考FileMain
+   2. 利用buffered實現逐行讀取
+4. 新增bufferedWriterFile用法
+   1. 參考FileMain
+   2. 利用buffered實現批次寫入效率較高，減少磁碟寫入動作
+5. 新增byteStreamUTFFile用法
+   1. 參考FileMain
+   2. 實現UTF寫入與讀取
+6. 新增getValueToBinary用法
+   1. 參考FileMain
+   2. 實現將數值轉為二進制String並顯示，以及顯示的String換色
+7. 新增serializableTest用法
+   1. 參考FileMain
+   2. 實現將class序列化，將資料寫入txt與txt讀取的方法
+      serialVersionUID是版本號，如果讀取版本號不同，會拋異常InvalidClassException
+8. 新增randomAccessFileWriteTest用法
+   1. 參考FileMain
+   2. 實現利用RandomAccessFile，多執行續寫入資料
+9. 新增randomAccessFileReadTest用法
+   1. 參考FileMain
+   2. 實現利用RandomAccessFile，多執行續讀取資料
+## FileNioMain
+1. 新增fileNioToIo用法
+   1. 參考FileNioMain
+   2. 實現NIO轉IO的用法，根據需求，若使用NIO時，可以中途轉
+2. 新增fileNIO用法
+   1. 參考FileNioMain
+   2. 實現純NIO用法，批次讀取，不太適合大數據，內存會不夠
+3. 新增byteBufferTest用法
+   1. 參考FileNioMain
+   2. 實現IO轉NIO用法，設定緩衝區大小，再將資料讀/寫緩衝區
